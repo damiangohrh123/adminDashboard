@@ -8,6 +8,183 @@
   <title>Admin-Dashboard</title>
 </head>
 <body>
-  <p></p>
+  <div class="sidebar">
+    <h1>Dashboard</h1>
+    <ul>
+      <li>
+        <img src="./images/home.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Home</span>
+      </li>
+      <li>
+        <img src="./images/account.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Profile</span>
+      </li>
+      <li>
+        <img src="./images/message-text.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Messages</span>
+      </li>
+      <li>
+        <img src="./images/history.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>History</span>
+      </li>
+      <li>
+        <img src="./images/book-multiple.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Tasks</span>
+      </li>
+      <li>
+        <img src="./images/account-group.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Communities</span>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <img src="./images/settings.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Settings</span>
+      </li>
+      <li>
+        <img src="./images/help-circle.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Support</span>
+      </li>
+      <li>
+        <img src="./images/shield.svg" alt="Image" width="40" height="40" class="sidebarIcons">
+        <span>Privacy</span>
+      </li>
+    </ul>
+  </div>
+  <div class="header">
+    <div>
+      <label class="searchbarContainer">
+        <img src="./images/magnify.svg" alt="Image" width="30" height="30">
+        <input type="text" id="searchbar" name="search">
+      </label>
+    </div>
+    <div class="headerProfile">
+      <img src="./images/bell.svg" alt="Image" width="40" height="40">
+      <img src="./images/user.png" alt="Image" width="40" height="40" class="userImage">
+      <span>Damian Goh</span>
+    </div>
+  </div>
+  <dix class="profileBar">
+    <div>
+      <label class="searchbarContainer">
+        <img src="./images/user.png" alt="Image" width="80" height="80" class="userImage">
+        <div class="greeting">
+          <p>Hi there,</p>
+          <p class="nameGreeting">Damian Goh (@damian)</p>
+        </div>  
+      </label>
+    </div>
+    <div class="headerProfile">
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
+    </div>
+  </dix>
+  <div class="content">
+    <h2 class="cardsHeader">Projects</h2>
+    <div class="cards">
+      <div class="card" onclick="navigateToLink('https://damiangohrh123.github.io/Calculator')">
+        <h3>Calculator</h3>
+        <p>Calculator with basic arithmetic operations created using HTML, CSS and JavaScript. It can be controlled by a mouse or by keyboard.</p>
+        <img src="./images/calculator.png" alt="Image">
+        <div class="cardIcons">
+          <img src="./images/star.svg" alt="Image" width="30" height="30">
+          <img src="./images/eye.svg" alt="Image" width="30" height="30">
+          <img src="./images/bookmark.svg" alt="Image" width="30" height="30">
+        </div>
+      </div>
+      <div class="card" onclick="navigateToLink('https://damiangohrh123.github.io/rockPaperScissors')">
+        <h3>Rock, Paper, Scissors!</h3>
+        <p>Rock paper scissors game where you play against a computer! Created using HTML, CSS and JavaScript.</p>
+        <img src="./images/rockPaperScissors.png" alt="Image">
+        <div class="cardIcons">
+          <img src="./images/star.svg" alt="Image" width="30" height="30">
+          <img src="./images/eye.svg" alt="Image" width="30" height="30">
+          <img src="./images/bookmark.svg" alt="Image" width="30" height="30">
+        </div>
+      </div>
+      <div class="card" onclick="navigateToLink('https://damiangohrh123.github.io/etch-a-Sketch')">
+        <h3>Etch-A-Sketch</h3>
+        <p>Create pixel art on a blank canvas. Let your imagination run wild! Created using HTML, CSS and JavaScript.</p>
+        <img src="./images/etchASketch.png" alt="Image">
+        <div class="cardIcons">
+          <img src="./images/star.svg" alt="Image" width="30" height="30">
+          <img src="./images/eye.svg" alt="Image" width="30" height="30">
+          <img src="./images/bookmark.svg" alt="Image" width="30" height="30">
+        </div>
+      </div>
+      <div class="card" onclick="navigateToLink('https://damiangohrh123.github.io/Sign-up-Form')">
+        <h3>Sign-up Form</h3>
+        <p>Stylized account creation website. Created using HTML and CSS for inputs and layout. Javascript was used for input validation.</p>
+        <img src="./images/form.png" alt="Image">
+        <div class="cardIcons">
+          <img src="./images/star.svg" alt="Image" width="30" height="30">
+          <img src="./images/eye.svg" alt="Image" width="30" height="30">
+          <img src="./images/bookmark.svg" alt="Image" width="30" height="30">
+        </div>
+      </div>
+      <div class="card" onclick="navigateToLink('https://damiangohrh123.github.io/odin-recipes')">
+        <h3>Recipe website</h3>
+        <p>My first HTML project. A recipe website.</p>
+        <img src="./images/recipes.png" alt="Image">
+        <div class="cardIcons">
+          <img src="./images/star.svg" alt="Image" width="30" height="30">
+          <img src="./images/eye.svg" alt="Image" width="30" height="30">
+          <img src="./images/bookmark.svg" alt="Image" width="30" height="30">
+        </div>
+      </div>
+    </div>
+    <h2 class="announcementsHeader">Announcements</h2>
+    <div class="announcements"> 
+      <ul>
+        <li class="announcement">
+          <h4>Site Maintenence</h4>
+          <p>We would like to inform you that we will be conducting essential maintenance on our systems to enhance performance and ensure the utmost reliability of our services.</p>
+        </li>
+        <li class="announcement">
+          <h4>Updated Privacy Policy</h4>
+          <p>We are committed to protecting your privacy and ensuring the security of your personal information. In our continuous efforts to maintain transparency and comply with evolving privacy regulations, we have recently updated our privacy policy.</p>
+        </li>
+        <li class="announcementLast">
+          <h4>Messaging services</h4>
+          <p>We are pleased to announce that we will be implementing enhanced security measures for our messaging service to further protect your privacy and ensure the confidentiality of your conversations.</p>
+        </li>
+      </ul>
+    </div>
+    <h2 class="trendsHeader">Trending</h2>
+    <div class="trends"> 
+      <ul>
+        <li class="friend">
+          <img src="./images/user2.png" alt="Image" width="50" height="50" class="userImage">
+          <div class="friendText">
+            <h5>@Tristan</h5>
+            <p>Gamer</p>
+          </div>
+        </li>
+        <li class="friend">
+          <img src="./images/user3.png" alt="Image" width="50" height="50" class="userImage">
+          <div class="friendText">
+            <h5>@Jia Hao</h5>
+            <p>Communications</p>
+          </div>
+        </li>
+        <li class="friend">
+          <img src="./images/user4.png" alt="Image" width="50" height="50" class="userImage">
+          <div class="friendText">
+            <h5>@Terence</h5>
+            <p>Body Builder</p>
+          </div>
+        </li>
+        <li class="friend">
+          <img src="./images/user.png" alt="Image" width="50" height="50" class="userImage">
+          <div class="friendText">
+            <h5>@Damian</h5>
+            <p>Designer</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 </body>
 </html>
